@@ -153,5 +153,31 @@ footer {
 
     main form {
         width: 90%;
+        max-width: none; 
+        height: auto; 
+    }
+
+    .footer-content {
+        display: none;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row div {
+        flex: 1;
+        min-width: unset;
+        margin-right: 0;
+    }
+
+    .form-row div input,
+    .form-row div select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul li:first-child {
+        display: block;
     }
 }
