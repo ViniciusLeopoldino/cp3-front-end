@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #595C5F;
+}
+
+header {
+    background: #171A1C;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    flex: 1;
+}
+
+form {
+    /* max-width: 900px; */
+    width: 1080px;
+    height: 665px;
+    margin: auto;
+    background: #4B4B4B;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+form fieldset {
+    margin-bottom: 20px;
+    border: none;
+    padding: 10px;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.form-row div {
+    flex: 1;
+    min-width: 280px;
+    margin-right: 10px;
+}
+
+.form-row div:last-child {
+    margin-right: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background: #22262A;
+    color: #FFFFFF80;
+}
+
+form button {
+    background: #ED185C;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+
+form button:hover {
+    background: #003366;
+}
+
+footer {
+    background: #171A1C;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+footer {
+    background: #171A1C;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+}
+
+@media (max-width: 991px) {
+    nav ul {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .mobile-menu a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 24px;
+    }
+
+    .mobile-menu a:hover {
+        color: #ED185C;
+    }
+
+    main form {
+        width: 90%;
+    }
+}

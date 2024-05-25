@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Sucesso</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <main>
+        <h1>Cadastro Realizado com Sucesso!</h1>
+        <pre id="cadastroData"></pre>
+        <button onclick="window.history.back()">Voltar</button>
+    </main>
+    <footer>
+        <p>Nome Completo: Fulano de Tal, Ciclano da Silva</p>
+        <p>RA: 123456, 654321</p>
+    </footer>
+    <script>
+        const data = JSON.parse(localStorage.getItem('cadastroData'));
+        document.getElementById('cadastroData').textContent = JSON.stringify(data, undefined, 2);
+    </script>
+</body>
+</html>
