@@ -7,14 +7,36 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../html/index.html" class="home-icon"><img src="../img/Logo mini.png" alt="Home"></a></li>
+                <li><a href="../html/index.html" class="user-icon">CADASTRE-SE</a></li>
+                <li><a href="https://www2.fiap.com.br/" target="_blank" class="student-portal-icon">PORTAL DO ALUNO</a></li>
+                <li><a href="https://www.fiap.com.br/graduacao/" target="_blank">GRADUAÇÃO</a></li>
+                <li><a href="https://postech.fiap.com.br/" target="_blank">PÓS TECH</a></li>
+                <li><a href="https://fiap.com.br" target="_blank" class="home-icon">SITE OFICIAL</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1>Cadastro Realizado com Sucesso!</h1>
-        <pre id="cadastroData"></pre>
-        <button onclick="window.history.back()">Voltar</button>
+        <form id="sucessForm">
+            <img src="../img/sucess.png" alt="Logo sucesso" height="100px"> 
+            <h1>Cadastro realizado com sucesso!</h1>
+            <h2>JSON dos dados</h2>
+            <pre id="cadastroData"></pre>
+            <a href="../html/index.html" class="no-underlined">Voltar</a>
+        </form>
     </main>
     <footer>
-        <p>Nome Completo: Fulano de Tal, Ciclano da Silva</p>
-        <p>RA: 123456, 654321</p>
+        <div class="footer-content">
+            <p>FIAP @ 2024 - Diego Santos Cardoso 558711 | Pablo Lopes Doria de Andrade 556834 | Vinicius Leopoldino de Oliveira 557047</p>
+        </div>
+        <div class="mobile-menu">
+            <a href="../html/index.html" class="home-icon"><img src="../img/register.png"></a>
+            <a href="../html/index.html" class="user-icon"><img src="../img/house.png"></a>
+            <a href="https://www2.fiap.com.br/" target="_blank" class="student-portal-icon"><img src="../img/graduate.png"></a>
+        </div>
     </footer>
     <script>
         const data = JSON.parse(localStorage.getItem('cadastroData'));

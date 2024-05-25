@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto;
     margin: 0;
     padding: 0;
     display: flex;
@@ -16,9 +16,13 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-left;
+    align-items: center;
     margin: 0;
     padding: 0;
+    font-size: 12px;
+    text-decoration: underline;
+    color:#ffffff;
 }
 
 nav ul li {
@@ -35,8 +39,44 @@ main {
     flex: 1;
 }
 
+#sucessForm {
+    padding: auto;
+    text-align: center; 
+    color: #ffffff;
+    height: auto;
+    width: auto;
+}
+
+#sucessForm h1 {
+    font-size: 24px;
+}
+
+#sucessForm h2 {
+    font-size: 18px;
+    text-align: left;
+}
+
+#sucessForm pre {
+    font-size: 14px;
+    text-align: left;
+}
+
+#sucessForm a {
+    background: #ffffff;
+    color: #ED185C;
+    border: 1px solid #ED185C;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    width: auto;
+    border-radius: 5px;
+}
+
+.no-underlined {
+    text-decoration: none;
+}
+
 form {
-    /* max-width: 900px; */
     width: 1080px;
     height: 665px;
     margin: auto;
@@ -72,8 +112,16 @@ form legend {
 }
 
 form label {
+    padding-top: 10px;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+form legend {
+    color: #ffffff;
+    font-size: 24px;
 }
 
 form input, form select {
@@ -83,20 +131,23 @@ form input, form select {
     border-radius: 5px;
     background: #22262A;
     color: #FFFFFF80;
+    border: none;
 }
 
 form button {
+    margin: 0 auto;
     background: #ED185C;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
     display: block;
-    width: 100%;
+    width: 98%;
+    border-radius: 5px;
 }
 
 form button:hover {
-    background: #003366;
+    background: #171A1C;
 }
 
 footer {
@@ -134,8 +185,34 @@ footer {
     nav ul li:not(:first-child) {
         display: none;
     }
+
     nav ul li:first-child {
         display: block;
+    }
+
+    body {
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    header {
+        background: #171A1C;
+        padding: 10px 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    footer {
+        background: #171A1C;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index: 1000;
     }
 
     .mobile-menu {
@@ -155,6 +232,7 @@ footer {
     }
 
     main form {
+        padding-top: 20px;
         width: 90%;
         max-width: none; 
         height: auto; 

@@ -35,8 +35,9 @@ document.getElementById('cadastroForm').addEventListener('submit', function(even
         genero,
         raca
     };
-
+ 
     localStorage.setItem('cadastroData', JSON.stringify(data));
 
     window.location.href = 'success.html';
 });
+
